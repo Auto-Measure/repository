@@ -1,4 +1,4 @@
-Group 18
+Group 1
 
 Nom du produit : Auto-mesure
 
