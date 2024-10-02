@@ -17,6 +17,6 @@ Sequoya Maclean-Courville 300416336
 Alexandre Turgeon 300401347
 Wissam Elmasry 300449399
 Tristan Rémillard 300438053
-Taha Kadi 300342384
+Taha Kadi 
 
 
