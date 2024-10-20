@@ -3,149 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fitcraft - Your personalized fitness plan. Explore features, pricing, and our team.">
-    <meta name="keywords" content="fitness, Fitcraft, health, gym, features, pricing">
-    <title>Fitcraft</title>
+    <title>Pricing Page</title>
     <style>
         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-            border-bottom: 2px solid #eee;
-        }
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
 
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-        }
+.logo img {
+    height: 50px;
+}
 
-        main {
-            margin: 30px 0;
-            display: flex;
-            justify-content: space-around;
-        }
+nav ul {
+    list-style: none;
+}
 
-        .pricing-card {
-            border: 1px solid #ddd;
-            padding: 20px;
-            width: 45%;
-            text-align: center;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-        }
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
 
-        h2 {
-            margin-bottom: 10px;
-        }
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
 
-        p {
-            font-size: 20px;
-            margin-bottom: 15px;
-        }
+/* Main Content - Pricing Section */
+main {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
 
-        button {
-            margin-top: 20px;
-            padding: 10px 15px;
-            border: none;
-            background-color: #28a745;
-            color: white;
-            cursor: pointer;
-            border-radius: 5px;
-        }
+.pricing {
+    display: flex;
+    gap: 40px;
+}
 
-        button:hover {
-            background-color: #218838;
-        }
+.pricing-plan {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
 
-        @media (max-width: 768px) {
-            main {
-                flex-direction: column;
-            }
+.pricing-plan h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 
-            .pricing-card {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-        }
+.price {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.features li:last-child {
+    border-bottom: none;
+}
     </style>
+    
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <div>
-            <a href="home.html" aria-label="Home page"><strong>Fitcraft</strong> (logo)</a>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" />
         </div>
-        <nav aria-label="Primary navigation">
-            <a href="features.html">Features</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="team.html">Team</a>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#team">Team</a></li>
+            </ul>
         </nav>
     </header>
-    
+
+    <!-- Main Content Section -->
     <main>
-        <div id="pricing-toggle">
-            <button onclick="togglePricing()">Switch to Annual Pricing</button>
-        </div>
-        <div>
-            <div id="monthly-price" class="pricing-card">
+        <section class="pricing">
+            <div class="pricing-plan">
                 <h2>Monthly</h2>
-                <p>$25/month</p>
-                <ul>
-                    <li>Access to all fitness programs</li>
-                    <li>Personalized coaching</li>
-                    <li>Free dietary plans</li>
+                <p class="price">$X/month</p>
+                <ul class="features">
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>Feature 4</li>
                 </ul>
             </div>
-            <div id="annually-price" class="pricing-card">
-                <h2>Annually</h2>
-                <p>$240/year</p>
-                <ul>
-                    <li>Access to all fitness programs</li>
-                    <li>Personalized coaching</li>
-                    <li>Free dietary plans</li>
+            <div class="pricing-plan">
+                <h2>Annual</h2>
+                <p class="price">$Y/year</p>
+                <ul class="features">
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>Feature 4</li>
                 </ul>
             </div>
-        </div>
+        </section>
     </main>
 
-    <script>
-        let isMonthly = true;
-
-        function togglePricing() {
-            const monthlyPrice = document.getElementById('monthly-price');
-            const annuallyPrice = document.getElementById('annually-price');
-            const button = document.querySelector('#pricing-toggle button');
-
-            if (isMonthly) {
-                monthlyPrice.style.display = 'none';
-                annuallyPrice.style.display = 'block';
-                button.innerText = 'Switch to Monthly Pricing';
-            } else {
-                monthlyPrice.style.display = 'block';
-                annuallyPrice.style.display = 'none';
-                button.innerText = 'Switch to Annual Pricing';
-            }
-
-            isMonthly = !isMonthly;
-        }
-
-        // Initially show only the monthly pricing
-        window.onload = function() {
-            document.getElementById('annually-price').style.display = 'none';
-        }
-    </script>
 </body>
 </html>
