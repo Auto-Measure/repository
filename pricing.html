@@ -4,141 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Page</title>
+    <!-- Montserrat Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <style>
         * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-}
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color:  rgba(255, 255, 255, 0.8);
-}
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            background-color: rgba(255, 255, 255, 0.938);
+            color: #000000;
+        }
 
-/* Header Section */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: rgba(7, 2, 51, 0.938);
-    color: #fff;
-}
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-.logo img {
-    height: 65px;
-}
+        .logo img {
+            height: 50px;
+        }
 
-nav ul {
-    list-style: none;
-    
-}
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000;
+        }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: underline;
-    text-decoration: bold;
-    font-size: 18px;
-}
+        nav ul li {
+            display: inline;
+        }
 
-/* Main Content - Pricing Section */
-main {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
-}
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 18px;
+        }
 
-.pricing {
-    display: flex;
-    gap: 40px;
-}
+        /* Main Content - Pricing Section */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px 0;
+        }
 
-.pricing-plan {
-    background-color: #5b98aa;
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    text-align: center;
-}
+        .title-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-.pricing-plan h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
+        .title-section h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
 
-.price {
-    font-size: 28px;
-    margin: 20px 0;
-}
+        .title-section p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+        }
 
-.features {
-    list-style: none;
-    padding: 0;
-}
+        .pricing {
+            display: flex;
+            gap: 45px;
+        }
 
-.features li {
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-}
+        .pricing-plan {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: left;
+        }
 
-.features li:last-child {
-    border-bottom: none;
-}
+        .pricing-plan h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .features li {
+            display: list-item;
+            list-style-type: circle;
+            margin-left: 1em;
+            padding: 5px 0;
+            font-size: 16px;
+        }
+
+        .price {
+            font-size: 28px;
+            margin: 20px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button-free {
+            background-color: #ddd;
+            color: #000;
+            margin-top: 20px;
+        }
+
+        .button-pro {
+            background-color: #06286b;
+            color: #fff;
+            margin-top: 20px;
+        }
     </style>
-    
 </head>
 <body>
+
     <!-- Header Section -->
     <header>
         <div class="logo">
-            <img src="Logo.jpg" alt="logo" />
+            <img src="Logo.png" alt="Fitcraft Logo" />
+            <div class="logo-text">Fitcraft</div>
         </div>
         <nav>
             <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#team">Team</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Pricing">Plans and pricing</a></li>
+                <li><a href="#About Us">About us</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Content Section -->
     <main>
+        <div class="title-section">
+            <h1>CHOOSE YOUR PLAN</h1>
+            <p>Find the right plan for accurate measurements and personalized fashion recommendations.</p>
+        </div>
+
         <section class="pricing">
+            <!-- Free Plan -->
             <div class="pricing-plan">
-                <h2>Monthly</h2>
-                <p class="price">$14.99/month</p>
+                <h2>FitCraft Free</h2>
+                <p class="description">Get Stylish and fit with NO cost just creativity.</p>
                 <ul class="features">
-                    <li><B>Can buy 3 articles of clothing per month</B></li>
-                    <li><B>Virtual reality try-on for up to 5 outfits per month</B></li>
-                    <li><B>Limited personalized <u>AI</u> clothing recommendations based on measurements.</B></li>
-                    <li><B>Access to exclusive discounts from partner sellers.</B></li>
+                    <li>Basic body measurements</li>
+                    <li>3D avatar with limited features</li>
+                    <li>Save up to 3 measurements</li>
+                    <li>Send measurements to 1 tailor</li>
+                    <li>Preview basic fabric options</li>
                 </ul>
+                <p class="price">$0 CAD</p>
+                <p>/month</p>
+                <a href="#" class="button button-free">GET STARTED FOR FREE</a>
             </div>
+
+            <!-- Pro Plan -->
             <div class="pricing-plan">
-                <h2>Annual</h2>
-                <p class="price">$149.99/year</p>
+                <h2>FitCraft PRO <span>👑</span></h2>
+                <p class="description">Unlock premium content, more enhanced features to stay fit and stylish.</p>
                 <ul class="features">
-                    <li><B>Can buy 10 articles of clothing per month</B></li>
-                    <li><B>Unlimited virtual reality try-ons</B></li>
-                    <li><B>Unlimited personalized <u>AI</u> clothing recommendations based on measurements.</B></li>
-                    <li><B>Exclusive access to special promotions and early access to new sellers</B></li>
-
+                    <li>Advanced body measurements with higher precision</li>
+                    <li>Customizable 3D avatar with more options (skin tone, body type)</li>
+                    <li>Save unlimited measurements</li>
+                    <li>Send measurements to unlimited tailors</li>
+                    <li>Design collaboration with tailors in real-time</li>
+                    <li>Access to tailor recommendations and fabric choice preview</li>
                 </ul>
-            </div>
-            <div class = "">
-
+                <p class="price">$14.99 CAD</p>
+                <p>/month or <b>$149.99 CAD/year</b></p>
+                <a href="#" class="button button-pro">Upgrade to Pro</a>
             </div>
         </section>
     </main>
-
 </body>
 </html>
