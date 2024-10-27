@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    color: #000000;
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+strong{
+    color: #003381;
+}
+
+#features{
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.features-card{
+    text-align: left;
+    display: grid;
+    width: 400px;
+    column-gap: 10px;
+}
+
+.features-card h2{
+    text-align: left;
+    font-size: 24px;
+}
+
+.features-card p{
+    font-size: 18px;
+}
+
+#personalized-outfit-div{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#take-measurements-div{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#discover-tailors-div{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#virtual-closet-div{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+button{
+    background-color: #003381;
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    color: aliceblue;
+    font-size: 25px;
+    border: none;
+}
+
+#personalized-outfit-div h2, #discover-tailors-div h2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#personalized-outfit-div p, #discover-tailors-div p{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#take-measurements-div h2 , #virtual-closet-div h2{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#take-measurements-div p, #virtual-closet-div p{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#personalized-outfit-div img, #discover-tailors-div img{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#take-measurements-div img, #virtual-closet-div img{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+}
