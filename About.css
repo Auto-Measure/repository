@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --blue-color: #003381;
+    --light-color: #003381;
+    --bg-color: aliceblue;
+    --header-margin-corners: 1em;
+    --font-color: black;
+    --link-font-size: 1.5em;
+    --black-color: var(--black-color);
+    --content-width: 60vw;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 2em;
+    font-size: 0.8em;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    margin-left: var(--header-margin-corners);
+}
+.logo strong{
+    font-size: 1.5em;
+    span{
+        color: #003381;
+    }
+}
+.logo svg{
+    height: 2em;
+    width: 2em;
+}
+
+nav .menu{
+    margin-right: var(--header-margin-corners);
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
+
+}
+
+nav .menu a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    color: var(--black-color);
+    font-weight: bold;  
+    transition: 0.5s ease-in-out;
+}
+a svg{
+    height: 1.5em;
+    width: 1.5em;
+    fill: var(--black-color);
+    transition: ease;
+}
+
+.menu a:hover{
+    color: var(--blue-color);
+    /* font-size: 1.2em; */
+    svg{
+        fill: var(--blue-color);
+        transition: 0.5s ease-in-out;
+    }
+}
+
+/*=============================================== ABOUT INFO SECTION =============================================================*/
+
+.sections{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.content{
+    width: var(--content-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.content h1, .content p{
+    text-align: center;
+}
+
+.content h1{
+    font-weight: 900;
+}
+
+
+/*=============================================== ABOUT INFO SECTION =============================================================*/
+
+/*==================================================TEAM SECTION ==========================================================*/
+
+.teams{
+    margin-top: 2em
+}
+
+.profile-grid{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5%;
+}
+
+.profile-grid .profile{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.profile-pic{
+    height: 8em;
+    width: 8em;
+    background-color: grey;
+    border-radius: 100%;
+}
+
+.profile-grid .profile p{
+    font-weight: 700;
+}
+
