@@ -43,6 +43,8 @@ nav{
     padding: 2em;
     font-size: 0.8em;
 }
+
+    
 .logo{
     display: flex;
     flex-direction: row;
@@ -134,7 +136,22 @@ a svg{
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 400px;
             text-align: left;
+            animation: glowAnimation 10s infinite alternate; /* Continuous background glow effect */
         }
+
+
+        @keyframes glowAnimation {
+            0% {
+                box-shadow: 0 0 30px rgba(30, 144, 255, 1); /* Bright glow */
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(30, 144, 255, 0.5); /* Medium glow */
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(30, 144, 255, 0.2); /* Less bright glow */
+            }
+        }
+        
 
         .pricing-plan h2 {
             font-size: 24px;
