@@ -1,0 +1,11 @@
+Colours
+========
+We should try to mimic the tailor theme and coloring scheme 
+
+- #003381
+- #000000
+- #F0F8FF
+
+Typography
+==========
+We will be using Montserrat from Google Fonts.
