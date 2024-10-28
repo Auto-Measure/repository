@@ -151,10 +151,10 @@
             color: #fff;
             margin-top: 20px;
         }
-        #fitcraftProSquare {
+        .pricing-plan {
             width: 200px;
             height: 200px;
-            background-color: #1E90FF; /* Initial color */
+            background-color: #1E90FF; /* Square color */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -162,16 +162,16 @@
             font-weight: bold;
             color: white;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(30, 144, 255, 0.8); /* Initial glow */
-            animation: glowAnimation 1.5s infinite alternate;
+            position: relative; /* Relative positioning for the glow effect */
+            animation: glowBackground 10s infinite alternate; /* Background glow effect */
         }
-
-        @keyframes glowAnimation {
+        
+        @keyframes glowBackground {
             0% {
-                box-shadow: 0 0 20px rgba(30, 144, 255, 1); /* Strong glow */
+                box-shadow: 0 0 20px rgba(30, 144, 255, 0.2); /* Darker blue glow */
             }
             100% {
-                box-shadow: 0 0 20px rgba(30, 144, 255, 0.2); /* Less strong glow */
+                box-shadow: 0 0 30px rgba(30, 144, 255, 1); /* Lighter blue glow */
             }
         }
         
