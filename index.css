@@ -110,6 +110,7 @@ body{
     text-align: center;
 }
 
+/*---------------------HOMECONTENU========================================*/
 .div1{
     display: flex;
     flex-direction: row;
@@ -133,23 +134,43 @@ body{
 
 
 .contenu{
-width: 100%;
+margin-top: 4em;
+width: 100vw;
+height: 100vh;
 display: flex;
 flex-direction: row ;
 align-items: center;
 justify-content: center;
+}
 
+.para{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.div1 .img{
+    background-color: aqua;
+    width: 50vw;
+    height: 50vh;
+}
+
+.div1 .img img{
+    width: 100%;
+    height: 100%;
 }
 
 .para h1{
     font-weight: 900;
     font-size: 2em;
+    text-align: left;
 }
 
 .para p{
     font-weight: 200;
     font-size: 1.5em;
     margin-top: 0.5em;
+    text-align: left;
 }
 .div2 a{
     background-color:var(--blue-color) ;
@@ -159,13 +180,16 @@ justify-content: center;
     font-weight: 800;
     
 }
-
-h2{
-    font-size: 40px;
+/*---------------------HomeCONTENU========================================*/
+h1{
+    font-weight: 900;
+    font-size: 2em;
     text-align: center;
-    margin-bottom: 30px;
 }
 
+.contenu2 h1{
+    margin-bottom: 4em;
+}
 
 
 h3{
@@ -287,3 +311,10 @@ button{
     object-fit: cover;
     border-radius: 20px;
 }
+
+/*Contenue 3======*/
+.contenu3{
+    height: 100vh;
+    width: 100vw;
+}
+
