@@ -110,11 +110,62 @@ body{
     text-align: center;
 }
 
+.div1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4em;
+    width: 80vw;
+    margin-top: 2em;
+}
+
+
+
+.div2{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+
+}
+
+
+
+.contenu{
+width: 100%;
+display: flex;
+flex-direction: row ;
+align-items: center;
+justify-content: center;
+
+}
+
+.para h1{
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.para p{
+    font-weight: 200;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+.div2 a{
+    background-color:var(--blue-color) ;
+    padding: 1em;
+    color: white;
+    border-radius: 0.5em;
+    font-weight: 800;
+    
+}
+
 h2{
     font-size: 40px;
     text-align: center;
     margin-bottom: 30px;
 }
+
 
 
 h3{
