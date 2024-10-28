@@ -163,18 +163,21 @@
             color: white;
             border-radius: 10px;
             position: relative; /* Relative positioning for the glow effect */
-            animation: glowBackground 10s infinite alternate; /* Background glow effect */
+            animation: glowAnimation 10s infinite alternate; /* Continuous background glow effect */
         }
         
-        @keyframes glowBackground {
+        @keyframes glowAnimation {
             0% {
-                box-shadow: 0 0 20px rgba(30, 144, 255, 0.2); /* Darker blue glow */
+                box-shadow: 0 0 30px rgba(30, 144, 255, 1); /* Bright glow */
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(30, 144, 255, 0.5); /* Medium glow */
             }
             100% {
-                box-shadow: 0 0 30px rgba(30, 144, 255, 1); /* Lighter blue glow */
+                box-shadow: 0 0 10px rgba(30, 144, 255, 0.2); /* Less bright glow */
             }
         }
-        
+                
     </style>
 </head>
 <body>
@@ -237,5 +240,6 @@
         </section>
     </main>
 </body>
-     <script src="script.js"></script>
+    // script pas important maintenemt
+   //  <script src="script.js"></script>
 </html>
