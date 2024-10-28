@@ -7,57 +7,94 @@
     <!-- Montserrat Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
 
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: rgba(255, 255, 255, 0.8);
-        }
+:root{
+    --blue-color: #003381;
+    --light-color: #003381;
+    --bg-color: aliceblue;
+    --header-margin-corners: 1em;
+    --font-color: black;
+    --link-font-size: 1.5em;
+    --black-color: var(--black-color);
+    --content-width: 60vw;
+}
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 50px;
-            background-color: rgba(255, 255, 255, 0.938);
-            color: #000000;
-        }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
 
-        .logo img {
-            height: 50px;
-        }
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 2em;
+    font-size: 0.8em;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    margin-left: var(--header-margin-corners);
+}
+.logo strong{
+    font-size: 1.5em;
+    span{
+        color: #003381;
+    }
+}
+.logo svg{
+    height: 2em;
+    width: 2em;
+}
 
-        .logo-text {
-            font-size: 24px;
-            font-weight: bold;
-            color: #000000;
-        }
+nav .menu{
+    margin-right: var(--header-margin-corners);
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
+}
 
-        nav ul li {
-            display: inline;
-        }
+nav .menu a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    color: var(--black-color);
+    font-weight: bold;  
+    transition: 0.5s ease-in-out;
+}
+a svg{
+    height: 1.5em;
+    width: 1.5em;
+    fill: var(--black-color);
+    transition: ease;
+}
 
-        nav ul li a {
-            color: #000000;
-            text-decoration: none;
-            font-size: 18px;
-        }
+.menu a:hover{
+    color: var(--blue-color);
+    /* font-size: 1.2em; */
+    svg{
+        fill: var(--blue-color);
+        transition: 0.5s ease-in-out;
+    }
+}
 
         /* Main Content - Pricing Section */
         main {
