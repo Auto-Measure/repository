@@ -1,10 +1,12 @@
-const fitcraftProSquare = document.getElementById('fitcraftProSquare');
+//Se code est plus important en se momnent
+const pricingPlan = document.querySelector('.pricing-plan');
 
-//
-fitcraftProSquare.addEventListener('mouseover', () => {
-    fitcraftProSquare.style.animationPlayState = 'running'; // Starts the glow effect
+// Start animation on mouse over
+pricingPlan.addEventListener('mouseover', () => {
+    pricingPlan.style.animationPlayState = 'running';
 });
 
-fitcraftProSquare.addEventListener('mouseout', () => {
-    fitcraftProSquare.style.animationPlayState = 'paused'; // Pauses the glow effect
+// Stop animation on mouse out
+pricingPlan.addEventListener('mouseout', () => {
+    pricingPlan.style.animationPlayState = 'paused';
 });
