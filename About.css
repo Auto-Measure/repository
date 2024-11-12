@@ -163,7 +163,7 @@ a svg{
 }
 
 .profile-pic.i2{
-    background-image: url(./img/Daniel.jpg); /* Replace with your image URL */
+    background-image: url(./img/Tristan.jpg); /* Replace with your image URL */
     background-size: cover; /* Makes the image cover the entire div */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling if the image is smaller than the div */
@@ -177,21 +177,21 @@ a svg{
 }
 
 .profile-pic.i4{
-    background-image: url(./img/Daniel.jpg); /* Replace with your image URL */
+    background-image: url(./img/IMG-20241030-WA0002~2.jpg); /* Replace with your image URL */
     background-size: cover; /* Makes the image cover the entire div */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling if the image is smaller than the div */
 }
 
 .profile-pic.i5{
-    background-image: url(./img/Daniel.jpg); /* Replace with your image URL */
+    background-image: url(./img/AlexIMG.png); /* Replace with your image URL */
     background-size: cover; /* Makes the image cover the entire div */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling if the image is smaller than the div */
 }
 
 .profile-pic.i6{
-    background-image: url(./img/Daniel.jpg); /* Replace with your image URL */
+    background-image: url(./img/imgTAHA.png); /* Replace with your image URL */
     background-size: cover; /* Makes the image cover the entire div */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling if the image is smaller than the div */
