@@ -19,6 +19,8 @@
 body{
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--bg-color);
@@ -26,13 +28,17 @@ body{
 }
 
 nav{
+    position:fixed;
+    z-index: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: var(--bg-color);
     padding: 2em;
     font-size: 0.8em;
+    top: 0;
+    width: 96vw;
 }
 .logo{
     display: flex;
@@ -97,6 +103,9 @@ a svg{
     margin-top: 2em;
 }
 
+.about-info.sections{
+    margin-top: 6em;
+}
 .content{
     width: var(--content-width);
     display: flex;
@@ -143,10 +152,50 @@ a svg{
 .profile-pic{
     height: 8em;
     width: 8em;
-    background-color: grey;
     border-radius: 100%;
 }
 
+.profile-pic.i1{
+    background-image: url(./img/Daniel.jpg); /* Replace with your image URL */
+    background-size: cover; /* Makes the image cover the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling if the image is smaller than the div */
+}
+
+.profile-pic.i2{
+    background-image: url(./img/Daniel.jpg); /* Replace with your image URL */
+    background-size: cover; /* Makes the image cover the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling if the image is smaller than the div */
+}
+
+.profile-pic.i3{
+    background-image: url(./img/Daniel.jpg); /* Replace with your image URL */
+    background-size: cover; /* Makes the image cover the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling if the image is smaller than the div */
+}
+
+.profile-pic.i4{
+    background-image: url(./img/Daniel.jpg); /* Replace with your image URL */
+    background-size: cover; /* Makes the image cover the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling if the image is smaller than the div */
+}
+
+.profile-pic.i5{
+    background-image: url(./img/Daniel.jpg); /* Replace with your image URL */
+    background-size: cover; /* Makes the image cover the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling if the image is smaller than the div */
+}
+
+.profile-pic.i6{
+    background-image: url(./img/Daniel.jpg); /* Replace with your image URL */
+    background-size: cover; /* Makes the image cover the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling if the image is smaller than the div */
+}
 .profile-grid .profile p{
     font-weight: 700;
 }
